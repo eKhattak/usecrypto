@@ -189,7 +189,6 @@ select {
   .list-header {
     flex-direction: column;
     font-size: 15px;
-    padding: 1rem 0.1rem;
   }
 
   .wrapper .list {
@@ -198,5 +197,20 @@ select {
 
   .react-select-container:first-child {
     margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .wrapper .title {
+    font-size: 35px;
+  }
+
+  .wrapper .list {
+    font-size: 16px;
+  }
+  .react-select__multi-value {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 }
